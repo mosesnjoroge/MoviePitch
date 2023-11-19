@@ -33,8 +33,18 @@ async function fetchBotReply(outline) {
 async function fetchSynopsis(outline) {
   const response = await openai.createCompletion({
     model: 'gpt-3.5-turbo-instruct',
-    prompt: `Generate an engaging, professional and marketable movie synopsis asking for a synopsis based on following idea "${outline}".`,
-    max_tokens:70
+    prompt: `Generate an engaging, professional and marketable movie synopsis asking for a synopsis based on following idea "${outline}".
+
+    // open ai example query result
+    '''
+    outline: A big headered daredevil figher pilot goes back to school only to be sent on a deadly mission.
+    synopsis: The Top Gun Naval Fighter Weapons School is where the best of the best train to refine their elite flying skills.
+    When hot shot figther pilot maverick (Tom Cruise) is sent to the school, hit reckless attitude especially the cool
+    '''
+    outline:${outline}
+    synopsis:
+    `,
+    max_tokens:700
   })
   // document.getElementById('output-text').innerText = response.data.choices[0].text.trim()
 }

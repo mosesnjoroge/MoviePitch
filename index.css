@@ -26,7 +26,7 @@ body {
 }
 
 /* =================
-      Typography 
+      Typography
      ================= */
 
 h1 {
@@ -43,7 +43,7 @@ p {
 }
 
 /* =================
-      Sections 
+      Sections
      ================= */
 
 header {
@@ -83,7 +83,7 @@ section {
 }
 
 /* =================
-      Setup 
+      Setup
      ================= */
 
 .setup-inner {
@@ -191,7 +191,7 @@ textarea::placeholder {
 }
 
 /* =================
-      Buttons & SVG 
+      Buttons & SVG
      ================= */
 
 
@@ -235,11 +235,11 @@ img.loading {
 }
 
 /* =================
-      Output 
+      Output
      ================= */
 
 .output-container {
-    display: none;
+    /* display: none; */
     flex-direction: column;
     margin: 1em auto;
     color: var(--dark);
@@ -253,7 +253,7 @@ img.loading {
 }
 
 /* =================
-      Footer 
+      Footer
      ================= */
 
 footer {

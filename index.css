@@ -26,7 +26,7 @@ body {
 }
 
 /* =================
-      Typography 
+      Typography
      ================= */
 
 h1 {
@@ -43,11 +43,11 @@ p {
 }
 
 /* =================
-      Sections 
+      Sections
      ================= */
 
 header {
-    background-color: var(--dark);
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,7 @@ header>img {
 }
 
 header>a {
-    color: var(--light);
+    color: black;
     font-size: 1.5em;
     text-decoration: none;
     padding: 1em 0;
@@ -83,7 +83,7 @@ section {
 }
 
 /* =================
-      Setup 
+      Setup
      ================= */
 
 .setup-inner {
@@ -191,18 +191,18 @@ textarea::placeholder {
 }
 
 /* =================
-      Buttons & SVG 
+      Buttons & SVG
      ================= */
 
 
 button {
     border: none;
-    background: var(--pink);
+    background: var(--dark);
     cursor: pointer;
 }
 
 button:hover {
-    background-color: var(--dark);
+    background-color: var(--pink);
 }
 
 .send-btn {
@@ -235,7 +235,7 @@ img.loading {
 }
 
 /* =================
-      Output 
+      Output
      ================= */
 
 .output-container {
@@ -247,19 +247,22 @@ img.loading {
 }
 
 .output-img-container>img {
-    max-width: 100%;
+    width: 100%;
     border-radius: var(--border-rad-lg);
     box-shadow: 1px 1px 5px 1px var(--dark);
 }
 
 /* =================
-      Footer 
+      Footer
      ================= */
 
 footer {
-    background-color: var(--dark);
-    color: var(--light);
-    padding: .8em;
+    background-color: #ff176b;
+    color: black;
+    padding: 1.8em;
     font-size: .7em;
-    text-align: center
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
 }
